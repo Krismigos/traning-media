@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    background-image: url(../img/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 263px;
+
+}
+
+.container {
+    width: 1440px;
+    padding-inline: 72px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* navigation */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px 0;
+
+    width: 1440px;
+    margin: auto;
+}
+
+.navigation-logo {
+    color: white;
+    font-family: Inter;
+    font-size: 30.4px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navigation-list__item {
+    text-decoration: none;
+
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* main */
+.main {
+    margin-bottom: 45px;
+}
+
+.main-btn {
+    width: 153px;
+    height: 42px;
+    flex-shrink: 0;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid white;
+
+    cursor: pointer;
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.art-info__contain {
+    width: 748px;
+
+}
+
+.art-info__title {
+    color: #FFF;
+    font-family: Libre Caslon Display;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.art-info__contain::before {
+    display: block;
+    margin-bottom: 32px;
+    content: "";
+    width: 90px;
+    height: 15px;
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.art-info__text {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: aliceblue;
+    margin: 32px 0;
+}
+
+/* newest */
+
+.newest {
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.newest-title {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 45px;
+}
+
+.newest-cards {
+    display: flex;
+    gap: 20px;
+
+}
+
+.newest-card {
+    width: 419px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-date {
+    color: #B7B7B7;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 35px;
+    padding-left: 32px;
+}
+
+.card-title {
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 32px;
+    margin-bottom: 32px;
+}
+
+.card-link {
+    position: relative;
+    margin: 34px 0 32px;
+    left: 291px;
+    width: 98px;
+}
