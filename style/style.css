@@ -3,25 +3,16 @@
 }
 
 .background {
-    background-image: url(../img/Background.jpg);
+    background: url(../img/Background.png) center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
-    padding-top: 263px;
-
+    margin-bottom: 89px;
 }
 
 .container {
-    width: 1440px;
-    padding-inline: 72px;
-    margin: auto;
-}
-
-.header {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 72px;
 }
 
 /* navigation */
@@ -30,14 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 32px 0;
+    padding: 32px;
 
-    width: 1440px;
-    margin: auto;
 }
 
 .navigation-logo {
     color: white;
+    text-decoration: none;
     font-family: Inter;
     font-size: 30.4px;
     font-style: normal;
@@ -53,7 +43,6 @@
 
 .navigation-list__item {
     text-decoration: none;
-
     color: white;
     font-family: Inter;
     font-size: 18px;
@@ -62,44 +51,44 @@
     line-height: normal;
 }
 
-/* main */
-.main {
-    margin-bottom: 45px;
+.navigation-list__items {
+    display: flex;
+    gap: 35px;
+}
+
+.burger-menu {
+    display: none;
 }
 
 .main-btn {
-    width: 153px;
+    max-width: 153px;
     height: 42px;
     flex-shrink: 0;
     background: none;
     border-radius: 10px;
     border: 2px solid white;
-
     cursor: pointer;
     color: white;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
-.art-info__contain {
-    width: 748px;
-
+/* main */
+.art-info {
+    margin-top: 180px;
 }
 
 .art-info__title {
+    max-width: 748px;
     color: #FFF;
     font-family: Libre Caslon Display;
     font-size: 80px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     color: #FFF;
 }
 
-.art-info__contain::before {
+.art-info::before {
     display: block;
     margin-bottom: 32px;
     content: "";
@@ -114,8 +103,6 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
     color: aliceblue;
     margin: 32px 0;
 }
@@ -123,58 +110,134 @@
 /* newest */
 
 .newest {
-    margin-top: 45px;
     margin-bottom: 50px;
 }
 
 .newest-title {
+
     color: #000;
     font-family: Inter;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-
     margin-bottom: 45px;
 }
 
-.newest-cards {
+.set-of-card {
     display: flex;
-    gap: 20px;
-
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 17px;
 }
 
 .newest-card {
-    width: 419px;
     display: flex;
     flex-direction: column;
+    max-width: 419px;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-date {
     color: #B7B7B7;
     font-family: Inter;
     font-size: 15px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    margin: 35px;
-    padding-left: 32px;
+    margin: 35px 0;
 }
 
 .card-title {
     color: #000;
     font-family: Inter;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    padding: 0 32px;
     margin-bottom: 32px;
 }
 
 .card-link {
-    position: relative;
-    margin: 34px 0 32px;
-    left: 291px;
-    width: 98px;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+    color: rgba(217, 133, 44, 1);
+    text-decoration: none;
+
+}
+
+.card-link::after {
+    content: '->';
+    align-items: center;
+    color: rgba(217, 133, 44, 1);
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .navigation-list__items {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1024px) and (min-width:755px) {
+    .art-info__title {
+        font-size: 70px;
+        line-height: 87px;
+    }
+
+    .newest-card {
+        max-width: 300px;
+    }
+
+}
+
+
+@media screen and (max-width:755px) {
+    .art-info {
+        margin-top: 100px;
+    }
+
+    .container {
+        padding: 0 32px;
+    }
+
+    .art-info__title {
+        color: #FFF;
+        font-family: Libre Caslon Display;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .art-info__text {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 168.523%;
+        /* 30.334px */
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .container {
+        padding: 0 32px;
+    }
+
 }

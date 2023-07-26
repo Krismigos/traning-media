@@ -11,75 +11,78 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Libre+Caslon+Display&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
     <title>Responsive-Design</title>
 </head>
 
 <body>
-    <header class="header">
+
+    <header class="background">
         <!-- навігація -->
-        <div class="navigation">
-            <h1 class="navigation-logo">ARTJUNKS</h1>
-            <ul class="navigation-list">
-                <li><a href="#" class="navigation-list__item">Home</a></li>
-                <li><a href="#" class="navigation-list__item">About</a></li>
-                <li><a href="#" class="navigation-list__item">Artists</a></li>
-                <li><a href="#" class="navigation-list__item">Careers</a></li>
-                <li><a href="#" class="navigation-list__item">News</a></li>
-                <li><a href="#" class="navigation-list__item">Company</a></li>
+        <nav class="navigation">
+            <a href="#" class="navigation-logo">ARTJUNKS</a>
+            <img src="./img/burger_menu.svg" class="burger-menu" alt="burger-menu">
+            <div class="navigation-list__items">
+                <ul class="navigation-list">
+                    <li><a href="#" class="navigation-list__item">Home</a></li>
+                    <li><a href="#" class="navigation-list__item">About</a></li>
+                    <li><a href="#" class="navigation-list__item">Artists</a></li>
+                    <li><a href="#" class="navigation-list__item">Careers</a></li>
+                    <li><a href="#" class="navigation-list__item">News</a></li>
+                    <li><a href="#" class="navigation-list__item">Company</a></li>
+                </ul>
                 <button class="main-btn">Get started</button>
-            </ul>
-        </div>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <section class="art-info container">
+            <h2 class="art-info__title">Art pieces made easy accessible for everyone</h2>
+            <p class="art-info__text">Learn, buy and trade art pieces of your favorite artist around the world
+                by
+                using
+                crypto currencies.</p>
+            <button class="main-btn">Learn more</button>
+
+        </section>
     </header>
 
 
-    <!-- main -->
-    <main class="main">
-        <div class="background">
-            <div class="container">
-                <div class="art-info__contain">
-                    <h2 class="art-info__title">Art pieces made easy accessible for everyone</h2>
-                    <p class="art-info__text">Learn, buy and trade art pieces of your favorite artist around the world
-                        by
-                        using
-                        crypto currencies.</p>
-                    <button class="main-btn">Learn more</button>
-                </div>
-            </div>
 
-        </div>
-    </main>
 
     <!-- Newest -->
-    <section class="newest container">
-        <h2 class="newest-title">Newest reads</h2>
-        <div class="newest-cards">
-            <!-- 1 -->
-            <div class="newest-card">
-                <img class="card-img" src="./img/castle.jpg" alt="photo">
-                <p class="card-date">5 August, 2022</p>
-                <h2 class="card-title">France seeks to protect Russia's Morozov collection from seizure as masterpieces
-                    return home</h2>
-                <a href="https://www.theartnewspaper.com/2022/04/08/france-russia-morozov-collection-return"
-                    target="_blank" class="card-link"><img src="./img/read_more.png" alt="read_more"></a>
-            </div>
-            <!-- 2 -->
-            <div class="newest-card">
-                <img class="card-img" src="./img/menshen.png" alt="photo">
-                <p class="card-date">5 August, 2022</p>
-                <h2 class="card-title">France seeks to protect Russia's Morozov collection from seizure as masterpieces
-                    return home</h2>
-                <a href="https://www.theartnewspaper.com/2022/05/25/masterpieces-from-morozov-collection-return-to-russia-from-francebut-three-works-have-been-retained"
-                    target="_blank" class="card-link"><img src="./img/read_more.png" alt="read_more"></a>
-            </div>
-            <!-- 3 -->
-            <div class="newest-card">
-                <img class="card-img" src="./img/house.png" alt="photo">
-                <p class="card-date">5 August, 2022</p>
-                <h2 class="card-title">France seeks to protect Russia's Morozov collection from seizure as masterpieces
-                    return home</h2>
-                <a href="https://slate.com/news-and-politics/2022/03/morozov-collection-louis-vuitton-paris-russian-owned-art-france.html"
-                    target="_blank" class="card-link"><img src="./img/read_more.png" width="98px" alt="read_more"></a>
-            </div>
+
+    <section class="newest">
+        <div class="container">
+            <h2 class="newest-title">Newest reads</h2>
+            <article class="set-of-card">
+                <article class="newest-card">
+                    <img class="card-img" src="./img/castle.jpg" alt="photo">
+                    <p class="card-date">5 August, 2022</p>
+                    <h2 class="card-title">France seeks to protect Russia's Morozov collection from seizure as
+                        masterpieces
+                        return home</h2>
+                    <a href="#" class="card-link">Read more</a>
+                </article>
+
+                <article class="newest-card">
+                    <img class="card-img" src="./img/menshen.png" alt="photo">
+                    <p class="card-date">5 August, 2022</p>
+                    <h2 class="card-title">France seeks to protect Russia's Morozov collection from seizure as
+                        masterpieces
+                        return home</h2>
+                    <a href="#" class="card-link">Read more</a>
+                </article>
+
+                <article class="newest-card">
+                    <img class="card-img" src="./img/house.png" alt="photo">
+                    <p class="card-date">5 August, 2022</p>
+                    <h2 class="card-title">France seeks to protect Russia's Morozov collection from seizure as
+                        masterpieces
+                        return home</h2>
+                    <a href="#" class="card-link">Read more</a>
+                </article>
+            </article>
         </div>
     </section>
 
